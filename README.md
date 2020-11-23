@@ -21,3 +21,6 @@ mkdir src
 docker-compose run --rm composer create-project --prefer-dist laravel/laravel .
 docker-compose up -d site
 ```
+
+
+# Project sistem informasi barang dan penjualan pada toko bangunan berbas aplikasi web dan mobile
