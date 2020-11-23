@@ -24,3 +24,4 @@ docker-compose up -d site
 
 
 # Project sistem informasi barang dan penjualan pada toko bangunan berbas aplikasi web dan mobile
+![(https://github.com/martri1/project-erd/blob/master/ERD-Penjulaanbarangtoko.png)]
