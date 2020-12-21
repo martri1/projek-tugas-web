@@ -15,8 +15,7 @@ class CreateTblpelangganTable extends Migration
     {
         Schema::create('tblpelanggan', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("idpelanggan");
-            $table->foreign("idpelanggan")->references("id")->on("users");
+            $table->string('idpelanggan',20);
             $table->string('namapelanggan',100);
             $table->string('alamatpelanggan',100);
             $table->string('notelepon',15);

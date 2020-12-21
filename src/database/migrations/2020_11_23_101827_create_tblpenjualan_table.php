@@ -15,14 +15,13 @@ class CreateTblpenjualanTable extends Migration
     {
         Schema::create('tblpenjualan', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("id_karyawan");
-            $table->foreign("id_karyawan")->references("id")->on("tblkaryawan");
-            $table->unsignedBigInteger("id_pelanggan");
-            $table->foreign("id_pelanggan")->references("id")->on("tblpelanggan");
-            $table->unsignedBigInteger("id_barang");
-            $table->foreign("id_barang")->references("id")->on("tblbarang");
+            $table->string("idkaryawan",20);
+            $table->string("idpelanggan",20);
+            $table->string("id_barang",20);
+            $table->string("namabarang",100);
             $table->date("tanggalpenjualan");
-            $table->string("jumlah", 5);
+            $table->string("jumlah",5);
+            $table->string("harga",20);
             $table->timestamps();
         });
     }
